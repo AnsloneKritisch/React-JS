@@ -1,0 +1,2 @@
+To upadte tar 
+npm install tar@6 -g 
