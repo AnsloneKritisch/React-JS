@@ -1,2 +1,3 @@
-To upadte tar 
-npm install tar@6 -g 
+To upadte tar :
+
+Code(indide CMD): npm install tar@6 -g 
