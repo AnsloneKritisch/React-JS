@@ -1,17 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import React from "react"
+import ReactDom from "react-dom"
+import Outside from "./sample_comp"
+import SampleCode from "./test_compo"
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+function Header()
+{
+  return <div style={{ textAlign:'center'}}><h1 style={{color:"blue"}}> This is my Heading </h1></div>
+}
+
+ReactDom.render( <div> <Header></Header> <Outside></Outside>   <SampleCode name="Anslone" age="18"></SampleCode>  <SampleCode name="Anshu" age="15"></SampleCode><SampleCode name="Palku" age="29"></SampleCode><SampleCode name="Palansh" age="27"></SampleCode><SampleCode name="Kritisch" age="65" ></SampleCode> <Header></Header> </div> ,  document.getElementById("root"))
