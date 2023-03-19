@@ -1,0 +1,8 @@
+we have ony one html file in js
+
+In side html we have a root component in html files 
+
+Which we are going to use a base file 
+
+when we run the npm command the html files is rendered 
+

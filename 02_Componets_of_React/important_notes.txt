@@ -1,3 +1,68 @@
+There are many Components of react js -
+
+Such as Header , side nav , main Content and Footer etc 
+
+Here one component of react should be inside of another component
+
+Component are mainly place in js files 
+
+here are two components of react:-
+
+Stateful Component and Stateless Component
+
+Stateful Component are components which use rendering Method
+Stateless Components are components which have return Method 
+
+
+More the complex Application the more functional components
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+There are two types of component in React JS :-
+
+1> Javascript Functions Components
+      
+  Here we gonna use javascript Functions to create a component
+
+code : 
+
+function welcome (props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+
+2> Stateful Class Components
+
+  Here we gonna use Class extending Component Class .
+  Render Methord returning HTML 
+
+
+Code :
+
+class welcome extends React. Component {
+  render() {
+     return <h1>Hello, (this.props.name)</h1>;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -104,5 +169,19 @@ function Header()
 }
 
 ReactDom.render( <div> <Header></Header> <Outside></Outside> <Header></Header> </div> ,  document.getElementById("root"))
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Funtional Component
+___________________
+
+A functional component is a javascript function that accepts an input of properties and returns Html that describes the UI. 
+The Html is actually something known as JSX, but for the sake of understanding from a beginner's point of view let's just call it Html. 
+
+
+
+
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------
