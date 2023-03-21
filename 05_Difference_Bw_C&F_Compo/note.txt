@@ -1,0 +1,17 @@
+class component 
+_____________________
+
+a class component can also maintain a private internal state.
+In simpler words. It can maintain some information which is private to that component and use that information to describe the user interface.
+
+
+functional components
+_______________________
+
+
+functional components tend to be without any complicated logic and are mainly responsible for the user interface. 
+Class components on the other hand, are a bit more feature rich.
+They can maintain their own private data, also called as state.
+They can contain complicated UI logic and most importantly they provide lifecycle hooks.
+
+
