@@ -1,15 +1,99 @@
-JavaScript XML (JSX) - Extension to the JavaScript language syntax.
- Write XML-like code for elements and components.
+JavaScript XML(JSX) - Extension to the JavaScript language syntax.
+ Write XML - like code for elements and components.
  JSX tags have a tag name, attributes, and children.
  JSX is not a necessity to write React applications.
  JSX makes your react code simpler and elegant.
 
 
-Class -> className
+    Class -> className
 for -> htmIFor
 
 camelCase property naming convention
- onclick -> onClick
- tabindex -> tabindex
+onclick -> onClick
+tabindex -> tabindex
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    Hello.js
+
+
+import React from 'react'
+
+// using jsx 
+
+const Hello = () => {
+
+    return (
+        <div>
+        <h1>Hello Anshu < /h1>
+            < /div>
+    )
+
+    
+}
+
+// Without using jsx
+
+const Para = () => {
+
+    return React.createElement(
+        'div', null, 'Hello Anshu <br> <h1>Hello Anshu</h1>',
+
+        React.createElement('h1', null, 'Hello Anshu'),
+
+        React.createElement('div', { id: 'hello', className: 'dummyclass' }, 'Hello Anshu')
+
+
+
+    );
+
+
+}
+
+export { Hello, Para };
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import './App.css';
+import { Hello, Para } from './comp/hello';
+
+function App() {
+    return (
+        <div className= "App" >
+        <Hello/>
+        < Para />
+        </div>
+
+    
+  );
+}
+
+export default App;
 
 
